@@ -8,10 +8,7 @@ import com.mongodb.client.MongoDatabase;
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
 
-/**
- * @author Johnson
- * @date 2020/2/28 13:47
- */
+
 public class TicTacToeCollection {
     private MongoCollection mongoCollection;
 

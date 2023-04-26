@@ -4,10 +4,6 @@ import org.jongo.marshall.jackson.oid.Id;
 
 import java.util.Objects;
 
-/**
- * @author Johnson
- * @date 2020/2/28 13:49
- */
 public class TicTacToeBean {
     private int x;
     private int y;
