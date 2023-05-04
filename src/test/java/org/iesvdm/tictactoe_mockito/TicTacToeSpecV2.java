@@ -1,14 +1,12 @@
 package org.iesvdm.tictactoe_mockito;
 
 import com.mongodb.MongoException;
+import com.mongodb.WriteResult;
 import org.jongo.MongoCollection;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-
 import org.mockito.junit.jupiter.MockitoExtension;
-
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -17,7 +15,7 @@ import static org.mockito.Mockito.*;
  * Si falla en Run > Edit Configuration > añadir argjvm: --add-opens java.base/java.lang=ALL-UNNAMED
  */
 @ExtendWith(MockitoExtension.class)
-public class TicTacToeSpec {
+public class TicTacToeSpecV2 {
 
 
     private TicTacToe ticTacToe;
@@ -32,6 +30,7 @@ public class TicTacToeSpec {
 
         bean = new TicTacToeBean(3, 2, 1, 'Y');
         mongoCollection = mock(MongoCollection.class);
+
 
         ticTacToe.setTicTacToeCollection(collection);
 
@@ -51,7 +50,15 @@ public class TicTacToeSpec {
     public void whenOccupiedThenRuntimeException() {
         //en el spy collection se modifica el comportamiento de saveMove, como si guardara la jugada
         //independientemente de que exista mongoDB, ¿qué pasa si comentas esta línea?
-        doReturn(true).when(collection).saveMove(any(TicTacToeBean.class));
+
+        //Alternativa do-when, NO HAY EFECTOS COLATERALES DE EJECUCIÓN DEL MÉTODO STUB
+        //doReturn(true).when(collection).saveMove(any(TicTacToeBean.class));
+
+        //Alternativa a do-when con when-then, PUEDE HABER EFECTOS COLATERALES DE EJECUCIÓN DEL MÉTODO STUB
+        when(collection.getMongoCollection()).thenReturn(mongoCollection);
+
+        when(collection.saveMove(any(TicTacToeBean.class))).thenReturn(true);
+        //when(mongoCollection.save(any(TicTacToeBean.class))).thenReturn(new WriteResult(1, true, new Object()));
 
         ticTacToe.play(1, 1);
         ticTacToe.play(2, 1);

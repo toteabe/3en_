@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d929ad-c98b-4528-973f-c92868fd0d0b" name="Changes" comment="Commit 3en_">
+    <list default="true" id="45d929ad-c98b-4528-973f-c92868fd0d0b" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tictactoe_mockito/TicTacToeSpecV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/tictactoe_mockito/TicTacToeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/tictactoe_mockito/TicTacToeBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/tictactoe_mockito/TicTacToeCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/tictactoe_mockito/TicTacToeCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/tictactoe_mockito/TicTacToeSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/tictactoe_mockito/TicTacToeSpec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,30 +33,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/usuario/IdeaProjects/tictactoe-mockito/src/test/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/usuario/IdeaProjects/tictactoe-mockito/src/test/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\usuario\IdeaProjects\tictactoe-mockito\src\test\java" />
       <recent name="C:\Users\usuario\IdeaProjects\tictactoe-mockito\src\main\java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.iesvdm.tictactoe_mockito" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TicTacToeSpec">
+  <component name="RunManager" selected="JUnit.TicTacToeSpecV2.whenOccupiedThenRuntimeException">
     <configuration name="TicTacToeSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tictactoe-mockito" />
       <extension name="coverage">
@@ -72,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeSpec.whenAllBoxesAreFilledThenDraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTacToeSpecV2.whenOccupiedThenRuntimeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tictactoe-mockito" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +84,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tictactoe_mockito" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tictactoe_mockito.TicTacToeSpec" />
-      <option name="METHOD_NAME" value="whenAllBoxesAreFilledThenDraw" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.tictactoe_mockito.TicTacToeSpecV2" />
+      <option name="METHOD_NAME" value="whenOccupiedThenRuntimeException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeSpec.whenPlayAndBottomTopDiagonalLineThenWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTacToeSpec.whenOccupiedThenRuntimeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tictactoe-mockito" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +117,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.iesvdm.tictactoe_mockito" />
       <option name="MAIN_CLASS_NAME" value="org.iesvdm.tictactoe_mockito.TicTacToeSpec" />
-      <option name="METHOD_NAME" value="whenPlayAndBottomTopDiagonalLineThenWinner" />
+      <option name="METHOD_NAME" value="whenOccupiedThenRuntimeException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicTacToeSpecV2.whenOccupiedThenRuntimeException" />
+        <item itemvalue="JUnit.TicTacToeSpec.whenOccupiedThenRuntimeException" />
         <item itemvalue="JUnit.TicTacToeSpec" />
         <item itemvalue="JUnit.TicTacToeSpec.whenPlayAndSaveReturnsFalseThenException" />
         <item itemvalue="JUnit.TicTacToeSpec.whenInstantiatedThenMongoHasDbNameTicTacToe" />
-        <item itemvalue="JUnit.TicTacToeSpec.whenAllBoxesAreFilledThenDraw" />
-        <item itemvalue="JUnit.TicTacToeSpec.whenPlayAndBottomTopDiagonalLineThenWinner" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +157,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682495032134</updated>
-      <workItem from="1682495033387" duration="6114000" />
+      <workItem from="1682495033387" duration="6807000" />
+      <workItem from="1683101506810" duration="5292000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 3en_">
       <created>1682502763041</created>
@@ -163,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682502763041</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit">
+      <created>1682502883167</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682502883167</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,20 +182,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 3en_" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 3en_" />
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/iesvdm/tictactoe_mockito/TicTacToeSpec.java</url>
-          <line>118</line>
+          <line>119</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tictactoe_mockito/TicTacToe.java</url>
           <line>41</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/tictactoe_mockito/TicTacToeCollection.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
